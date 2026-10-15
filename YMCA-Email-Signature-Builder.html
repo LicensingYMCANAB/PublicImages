@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YMCA of Northern Alberta Email Signature Builder</title>
+<meta name="description" content="Create your YMCA of Northern Alberta email signature and copy it into Outlook.">
+<style>
+:root{--red:#e81f30;--ink:#172d40;--blue:#014990;--muted:#546575;--line:#dce3e8}*{box-sizing:border-box}body{margin:0;background:#f3f5f7;color:var(--ink);font:15px/1.5 Arial,sans-serif}header{background:white;border-top:6px solid var(--red);border-bottom:1px solid var(--line)}.wrap{max-width:1240px;margin:auto;padding:28px 32px}.brand{font-weight:800;color:var(--red);font-size:16px}.eyebrow{font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);margin:24px 0 6px}h1{font-size:36px;line-height:1.15;letter-spacing:-1px;margin:10px 0}h2{font-size:20px;margin:0 0 6px}h3{font-size:16px;margin:0 0 12px}p{margin:6px 0 18px}.subtle{color:var(--muted)}.regions{display:flex;gap:10px;flex-wrap:wrap}.region{background:white;border:1px solid #bcc9d2;border-radius:9px;padding:12px 20px;text-align:left;min-width:175px;color:var(--ink)}.region strong,.region span{display:block}.region span{font-size:12px;margin-top:3px}.region[aria-pressed=true]{border:2px solid var(--red);padding:11px 19px;background:#fff4f5}.grid{display:grid;grid-template-columns:minmax(300px,420px) minmax(0,1fr);gap:24px;margin-top:24px;align-items:start}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:24px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.full{grid-column:1/-1}label{font-size:13px;font-weight:700;display:block}input,select{width:100%;border:1px solid #b4c2cc;border-radius:6px;padding:10px;background:white;color:var(--ink);font:15px Arial,sans-serif;margin-top:5px}input:focus,select:focus{outline:2px solid var(--blue);outline-offset:2px}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:3px}button{cursor:pointer;font:inherit}button:disabled{opacity:.6;cursor:wait}.divider{border:0;border-top:1px solid var(--line);margin:22px 0}.check{display:flex;align-items:center;gap:9px;font-weight:400;margin:12px 0}.check input{width:17px;height:17px;margin:0;accent-color:var(--red)}.hint{font-size:12px;color:var(--muted);margin:7px 0 0}.preview-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.badge{font-size:11px;font-weight:bold;letter-spacing:.6px;background:#eaf3ef;color:#276342;padding:5px 9px;border-radius:20px;white-space:nowrap}.preview-viewport{overflow:auto;border:1px solid var(--line);border-radius:7px;margin:18px 0;background:white;padding:24px}.preview-note{font-size:12px;color:var(--muted);margin:0}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.primary,.secondary{padding:11px 17px;border-radius:6px;font-weight:bold}.primary{background:var(--red);color:white;border:1px solid var(--red)}.primary:hover{background:#c31929}.secondary{background:white;border:1px solid #b4c2cc;color:var(--ink)}.status{font-size:13px;min-height:22px;margin:12px 0 0}.instructions{margin-top:20px;background:#edf3f9;border-radius:8px;padding:18px}.instructions ol{padding-left:20px;margin:8px 0 12px}.instructions li{margin:7px 0}a{color:var(--blue)}.instructions a{font-size:13px}details{margin-top:18px}summary{cursor:pointer;font-size:13px;font-weight:700}.foot{font-size:12px;color:var(--muted);padding:22px 0}.optional{font-size:11px;color:var(--muted);font-weight:normal}#manualHelp[hidden]{display:none}@media(max-width:950px){.grid{grid-template-columns:1fr}.wrap{padding:24px 18px}}@media(max-width:440px){h1{font-size:29px}.card{padding:18px}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.region{flex:1;min-width:135px}.preview-head{align-items:start}.preview-viewport{padding:16px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>YMCA of Northern Alberta Email Signature Builder</h1><p class="subtle" style="margin-bottom:0">Choose your region, add your details, and copy your signature into Outlook.</p></div></header>
+<main class="wrap">
+<div class="eyebrow">1 · Choose your region</div>
+<div class="regions" role="group" aria-label="Region">
+<button class="region" type="button" data-region="edmonton" aria-pressed="true"><strong>Edmonton</strong><span>Treaty No. 6</span></button>
+<button class="region" type="button" data-region="reddeer" aria-pressed="false"><strong>Red Deer</strong><span>Treaty No. 6 &amp; 7</span></button>
+<button class="region" type="button" data-region="grandeprairie" aria-pressed="false"><strong>Grande Prairie</strong><span>Treaty No. 8</span></button>
+<button class="region" type="button" data-region="woodbuffalo" aria-pressed="false"><strong>Wood Buffalo</strong><span>Treaty No. 8</span></button>
+</div>
+<div class="grid">
+<section class="card"><h2>2 · Add your details</h2><p class="subtle">Your signature updates as you type.</p>
+<form id="details" autocomplete="off">
+<div class="form-grid">
+<label class="full">Full name <span aria-hidden="true">*</span><input id="fullName" required placeholder="First Name Last Name" maxlength="100"></label>
+<label class="full">Job title <span aria-hidden="true">*</span><input id="jobTitle" required placeholder="Your job title" maxlength="150"></label>
+<label class="full">Department <span class="optional">Optional</span><input id="department" placeholder="Your department" maxlength="150"></label>
+<label class="full">Work location <span class="optional">Optional</span><input id="location" placeholder="Facility or office name" maxlength="150"></label>
+<label class="full">Street address <span class="optional">Optional</span><input id="street" placeholder="Street address" maxlength="200"></label>
+<label>City<input id="city" value="Edmonton" maxlength="100"></label><label>Postal code <span class="optional">Optional</span><input id="postal" placeholder="T5J 0A1" maxlength="10"></label>
+<label class="full">Treaty territory<select id="treaty"><option value="6">Treaty No. 6 Territory</option><option value="6 & 7">Treaty No. 6 &amp; 7 Territory</option><option value="8">Treaty No. 8 Territory</option></select></label>
+<label>Work phone <span class="optional">Optional</span><input id="phone" type="tel" placeholder="780 000.0000" maxlength="40"></label><label>Extension <span class="optional">Optional</span><input id="extension" placeholder="1234" maxlength="10"></label>
+<label class="full">Mobile phone <span class="optional">Optional</span><input id="mobile" type="tel" placeholder="780 000.0000" maxlength="40"></label>
+<label class="full">Work email <span aria-hidden="true">*</span><input id="email" type="email" required placeholder="youremail@ymcanab.ca" maxlength="200"></label>
+</div>
+<hr class="divider"><h3>Make it yours</h3>
+<label class="check"><input id="showPronouns" type="checkbox">Include pronouns</label>
+<label id="pronounsLabel" hidden>Pronouns<input id="pronouns" placeholder="e.g. she/her, he/him, they/them" maxlength="70"></label>
+<label class="check"><input id="acknowledgement" type="checkbox" checked>Include land acknowledgement</label>
+<p class="hint">Pronouns and the land acknowledgement are optional. The regional treaty line remains in your signature.</p>
+<p class="hint">* Required before copying. Your entries stay on this page and are cleared when you reload or leave.</p>
+</form>
+</section>
+<section class="card" aria-label="Signature preview and copy"><div class="preview-head"><div><h2>3 · Preview &amp; copy</h2><span class="subtle" style="font-size:13px">This is what you’ll paste into Outlook.</span></div><span class="badge">LIVE PREVIEW</span></div>
+<div class="preview-viewport"><div id="signature" aria-label="Email signature preview"></div></div>
+<p class="preview-note">The banner uses the same hosted image as your current corporate template. Outlook may display a still frame or ask recipients to download images.</p>
+<div class="actions"><button type="button" class="primary" id="copy">Copy signature</button><button type="button" class="secondary" id="select">Select signature</button></div>
+<p id="status" class="status" role="status" aria-live="polite"></p>
+<p id="manualHelp" class="hint" hidden>Only your signature is selected. Press Ctrl+C (Windows) or ⌘C (Mac), then paste into Outlook using the original formatting.</p>
+<div class="instructions"><h3>Finish in Outlook</h3><ol><li>Open Outlook <strong>Settings → Accounts → Signatures</strong>. In Outlook Classic, use <strong>File → Options → Mail → Signatures</strong>.</li><li>Create a signature and paste using <strong>Ctrl+V</strong> (Windows) or <strong>⌘V</strong> (Mac). Keep the source formatting.</li><li>Set it as your default for <strong>new messages</strong> and <strong>replies and forwards</strong>, then save.</li><li>Send yourself a test email to check the layout, links and banner.</li></ol>
+<a href="https://scribehow.com/o/KRrtwtcMRL-vM-45dZ4Kmw/viewer/How_to_setup_your_Email_Signature_in_Outlook_Web_browser__CP84NEP6RVOdtXsY93PFtw" target="_blank" rel="noopener noreferrer">New Outlook / web guide ↗</a> &nbsp;·&nbsp; <a href="https://scribehow.com/o/KRrtwtcMRL-vM-45dZ4Kmw/viewer/How_to_setup_your_Email_Signature_in_Outlook_Classic__Rn_ujdUdRbKLCIgt4KM-2g" target="_blank" rel="noopener noreferrer">Classic Outlook guide ↗</a>
+</div>
+<details><summary>Having trouble copying?</summary><p class="hint">Choose “Select signature,” then copy with your keyboard. Don’t select the whole page. If you see plain text when pasting, choose “Keep source formatting” in Outlook. If a copied image disappears, try the published HTTPS page in Microsoft Edge or Google Chrome.</p></details>
+</section>
+</div>
+<footer class="foot">YMCA of Northern Alberta · Consistent, clear and inclusive communication.</footer>
+</main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+const REGIONS={edmonton:{city:'Edmonton',treaty:'6'},reddeer:{city:'Red Deer',treaty:'6 & 7'},grandeprairie:{city:'Grande Prairie',treaty:'8'},woodbuffalo:{city:'Wood Buffalo',treaty:'8'}};
+// Corporate source: https://licensingymcanab.github.io/PublicImages/
+// Treaty wording and signature text follow the existing template.
+const BANNER='https://raw.githubusercontent.com/LicensingYMCANAB/PublicImages/refs/heads/main/Y-Logo-GIF_dac62be1-8e3e-46fa-809a-bffa35871a6d.gif';
+const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const val=id=>$(id).value.trim();
+const link=(href,text)=>'<a href="'+esc(href)+'" style="color:#014990;text-decoration:underline;">'+esc(text)+'</a>';
+function tel(number){return 'tel:'+number.replace(/[^+0-9]/g,'');}
+function render(){
+ $('pronounsLabel').hidden=!$('showPronouns').checked;
+ const name=esc(val('fullName')||'First Name Last Name');
+ const pronouns=$('showPronouns').checked&&val('pronouns')?' | Pronouns: '+esc(val('pronouns')):'';
+ const role=[val('jobTitle')||'Your job title',val('department')].filter(Boolean).map(esc).join(' | ');
+ const cityLine=(val('city')?val('city')+', AB':'AB')+(val('postal')?' '+val('postal'):'');
+ const address=[val('street'),cityLine].filter(Boolean).map(esc).join(', ');
+ const treaty='Treaty No. '+esc(val('treaty'))+' Territory';
+ const phones=[];
+ if(val('phone'))phones.push('p: '+link(tel(val('phone'))+(val('extension')?';ext='+val('extension').replace(/[^0-9]/g,''):''),val('phone'))+(val('extension')?' ext. '+esc(val('extension')):''));
+ if(val('mobile'))phones.push('c: '+link(tel(val('mobile')),val('mobile')));
+ const email=val('email')||'youremail@ymcanab.ca';
+ const ack=$('acknowledgement').checked?'<tr><td style="padding-top:18px;font-size:11px;line-height:15px;">YMCA of Northern Alberta acknowledges that we are on the traditional territory of the Cree (including Upstream People, Woods), Blackfoot, Métis, Nakoda, Tsuu T’ina, Dene, and Dane-zaa (Beaver) peoples. Treaties 6, 7 and 8 territories continue to be an important gathering place for many First Nation peoples. We also recognize their contributions to building healthy communities and thank them for their stewardship of the land. YMCAs in Canada are committed to fostering a sense of belonging for all, a value reflected in our '+link('https://www.ymca.ca/who-we-are/statement-reconciliation','Statement of Reconciliation')+'.</td></tr>':'';
+ $('signature').innerHTML='<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="width:600px;border-collapse:collapse;font-family:Calibri,Arial,sans-serif;font-size:14px;line-height:19px;color:#222222;background:#ffffff;"><tbody><tr><td><strong>'+name+'</strong>'+pronouns+'<br>'+role+(val('location')?'<br>'+esc(val('location')):'')+'<br><strong style="color:#e81f30;">YMCA of Northern Alberta</strong><br>'+address+(address?' | ':'')+treaty+(phones.length?'<br><strong>'+phones.join(' | ')+'</strong>':'')+'<br><strong>e:</strong> '+link('mailto:'+email,email)+' | '+link('https://ymcanab.ca','ymcanab.ca')+'</td></tr><tr><td style="padding-top:4px;"><img src="'+BANNER+'" width="600" border="0" alt="YMCA of Northern Alberta — Shine On" style="display:block;width:600px;border:0;"></td></tr><tr><td style="font-size:10px;line-height:14px;color:#014990;">Charitable Registration: 11930 7122 RR0001</td></tr>'+ack+'<tr><td style="padding-top:18px;font-size:11px;line-height:15px;">This message is intended only for the use of the individual or entity to which it has been addressed and may contain information that is privileged and confidential. If you are not the intended recipient, or the employee or agent responsible for delivering the message to the intended recipient, you are hereby notified that any dissemination, distribution or copying of this communication is strictly prohibited. If this communication has been received in error, please respond immediately via telephone or return e-mail, and delete all copies of this material.</td></tr></tbody></table>';
+ $('status').textContent='';$('manualHelp').hidden=true;
+}
+function chooseRegion(key){const r=REGIONS[key];document.querySelectorAll('[data-region]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.region===key)));$('city').value=r.city;$('treaty').value=r.treaty;render();}
+document.querySelectorAll('[data-region]').forEach(b=>b.addEventListener('click',()=>chooseRegion(b.dataset.region)));
+$('details').addEventListener('input',render);$('details').addEventListener('change',render);$('details').addEventListener('submit',e=>e.preventDefault());
+function selectSignature(){const range=document.createRange();range.selectNodeContents($('signature'));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);}
+function valid(){if(!$('details').reportValidity()){$('status').textContent='Please complete your name, job title and a valid work email before copying.';return false;}return true;}
+function manual(){selectSignature();$('manualHelp').hidden=false;$('status').textContent='Signature selected. Use your keyboard to copy.';}
+function legacyCopy(){selectSignature();let ok=false;try{ok=document.execCommand('copy');}catch(e){}if(ok){window.getSelection().removeAllRanges();$('status').textContent='Signature copied. Paste it into Outlook and keep the source formatting.';}else manual();}
+$('select').addEventListener('click',()=>{if(valid())manual();});
+$('copy').addEventListener('click',async()=>{if(!valid())return;const button=$('copy');button.disabled=true;try{if(navigator.clipboard&&window.ClipboardItem&&window.isSecureContext){const html='<!doctype html><html><head><meta charset="utf-8"></head><body>'+ $('signature').innerHTML+'</body></html>';await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([html],{type:'text/html'}),'text/plain':new Blob([$('signature').innerText],{type:'text/plain'})})]);$('status').textContent='Signature copied. Paste it into Outlook and keep the source formatting.';}else legacyCopy();}catch(e){legacyCopy();}finally{button.disabled=false;}});
+render();
+</script>
+</body>
+</html>
